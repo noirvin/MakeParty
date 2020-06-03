@@ -1,0 +1,1 @@
+Manage parties and events!
