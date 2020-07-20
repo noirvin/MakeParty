@@ -1,3 +1,4 @@
+
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Rsvp = sequelize.define('Rsvp', {
@@ -5,10 +6,7 @@ module.exports = (sequelize, DataTypes) => {
     email: DataTypes.STRING
   }, {});
   Rsvp.associate = function(models) {
-    // associations can be defined here
+    Rsvp.belongsTo(models.Event); // EventId
   };
   return Rsvp;
-};
-Rsvp.associate = function(models) {
-  Rsvp.belongsTo(models.Event); // EventId
 };
