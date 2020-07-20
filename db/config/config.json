@@ -8,7 +8,7 @@
         "rejectUnauthorized": false
       }
     }
-  }
+},
  "development": {
    "username": null,
    "password": null,

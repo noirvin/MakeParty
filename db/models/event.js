@@ -10,3 +10,6 @@ module.exports = (sequelize, DataTypes) => {
   };
   return Event;
 };
+Event.associate = function(models) {
+  Event.hasMany(models.Rsvp);
+};

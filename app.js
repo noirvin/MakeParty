@@ -6,6 +6,8 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 const models = require('./db/models');
 require('./controllers/events')(app, models);
+require('./controllers/events')(app, models);
+require('./controllers/rsvps')(app, models);
 
 
 app.use(methodOverride('_method'))
